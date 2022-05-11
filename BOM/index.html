@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Learning BOM(Browser Object Model)</title>
+	</head>
+	<body>
+	   <h2>Hi There! How are You?</h2>
+	   
+	   <form>
+	      Enter Name : <input type="text">
+	   </form>
+	   <a href="google.com">Google</a>
+	   <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_5396447_from-nature-with-love.html&psig=AOvVaw1ONLN2XY4m6gGY_sGlV5kr&ust=1650483896960000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPiJiOXxoPcCFQAAAAAdAAAAABAD.jpg", width="200px", height="300px">
+	   <script>
+			alert("You are in Danger");
+			let a = document;
+			a = document;
+			
+			a = document.all;
+			//a = document.body;
+			
+			//a = document.forms[0];
+			a = document.links;
+			
+			a = document.images;
+			
+			Array.from(a).forEach(function(element){
+				console.log(element);
+			})
+			
+			console.log(a);
+	   </script>
+	</body>
+</html>
