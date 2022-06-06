@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .div1{
+                background-color: lightblue;
+                width: 30%;
+                padding: 30px;
+                border-radius: 50px;
+            }
+        </style>
+
+    </head>
+
+<body>
+    <h2>1.onmouseover</h2>
+    <h2>1.onmouseout</h2>
+    <h2>1.onmousedown</h2>
+    <h2>1.onmouseup</h2>
+    <h2>1.onmousemove</h2>
+    <div class="div1">
+        <h2>1.onmouseover</h2>
+        <h2>2.onmousout</h2>
+        <h3>Example of onmouseover Event </h3>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:red;
+        padding:30px; width:30%; border-radius:30px;">Mouser Over Mouse Out</div>
+    </div><br><br>
+    <div class="div1">
+        <h2>2.onmousedown</h2>
+        <h2>4.onmousup</h2>
+        <h3>Example of onmouseover Event </h3>
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:red;
+        padding:30px; width:30%; border-radius:30px;">Mouser Down or Mouse Up</div>
+    </div><br><br>
+
+    <div class="div1">
+        <h2>5.onmousemove</h2>
+        <h3>Example of onmouseover Event </h3>
+        <div onmousemove="mMove(this)" style="background-color:red;
+        padding:30px; width:30%; border-radius:30px;">Mouse Move</div>
+    </div><br><br>
+
+
+<script>
+    function mOver(id){
+        id.innerHTML="Hi i am Mouse Over"
+        id.style.backgroundColor="White";
+    }
+    function mOut(raj){
+        raj.innerHTML="Hi i am Mouse Out";
+        raj.style.backgroundColor="yellow";
+    }
+
+    function mDown(neelu){
+        neelu.innerHTML="Hello i am Mouse Down"
+        neelu.style.backgroundColor="pink";
+    }
+    function mUp(pihu){
+        pihu.innerHTML="Hello i am Mouse Up"
+        pihu.style.backgroundColor="cyan";
+    }
+
+    function mMove(obj){
+        obj.innerHTML="Working Mouse Out"
+        obj.style.backgroundColor="green";
+        obj.style.color="white";
+    }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Example of arrays</h3>
+
+    <script>
+    var cars = ['Tata','Mahindra','Maruti','BMW','Toyota'];
+    document.write(cars + "<br>")
+    cars.push("AUDI");
+    //cars.shift();
+    //cars.reverse();
+    //cars.pop();
+    document.write(Array.isArray(cars)+"<br>");
+    document.write(cars.indexOf('Tata')+"<br/>");
+    document.write(cars.indexOf('BMW') + "<br/>");
+    
+    
+    
+    document.write(cars+"<br>")
+    document.write("<h4>Array with new Keyword</h4>");
+
+    var students = new Array('Raj','Tilak','Ram','Rajan','Pankaj','Suraj','Neelam');
+    document.write(students+"<br />");
+
+    console.log(cars.concat(students));
+    document.write(cars.concat(students));
+   
+
+    document.write("<h4>Third way to create Array</h4>");
+    var city = new Array();
+    city[0] = 'Mumbai'
+    city[2] = 'Bhopal'
+    city[3] = 'Jaunour'
+    document.write(city[0]+"<br/>");
+    document.write(city[1]+ "<br/>");
+    document.write(city[2] + "<br/>");
+    document.write(city[3] + "<br/>");
+    document.write("<h1>OR We can print like below</h1>");
+    document.write(city);
+    </script>
+</body>
+</html>

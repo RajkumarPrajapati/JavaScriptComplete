@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Throw</title>
+
+    </head>    
+    <body>
+            <p>Enput number between 10-15</p>
+            <input id="demo" type="text">
+            <button type="button" onclick="myFunction()">Test Your Input</button>
+            <p id="demo1"></p>
+        
+        <script>
+           function myFunction(){
+            const message=document.getElementById("demo1").innerHTML="";
+            let x=document.getElementById("demo").value;
+            try{
+                if(x == "") throw "Is Empty please Enter";
+                if(isNaN(x)) throw "Is not a number";
+                if(x<10) throw "Lesss then 10";
+                if(x>20) throw "More then 20";
+                else{
+                    document.getElementById("demo1").innerHTML="Success";
+                }
+            }catch(error){
+                document.getElementById("demo1").innerHTML=error;
+            }
+
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Dome Element Example-2</title>
+</head>
+    <body>
+       
+        <form>
+          Enter Username :  <input type="text" name="username">
+          Enter Password :  <input type="text" name="password">
+          <input type="button" onclick="data()" value="Show Data">
+        </form>
+
+        <script> 
+         function data(){  
+            var uname=document.getElementsByName("username");
+            var pass=document.getElementsByName("password");
+            alert("User Nname is : "+uname+"<br>Password is :"+pass);
+
+         }
+         </script>
+    </body>
+</html> 

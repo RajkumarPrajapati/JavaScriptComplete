@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dom Elements Example</title>
+    </head>
+    <body>
+        <h2>1. Example of change the content of p tag id="demo" by inner.HTML</h2>
+        <p id="demo"></p>
+
+        <h2>2.Example of getELementById to print the cube of entered number in text field</h2>
+        <p id="demo2"></p>
+        <form>
+            Enter Number to get Cube : <input type="text" name="number" id="number" /><br>
+            Enter name:<input type="text" id="name" name="name"/>
+            <input type="button" value="Get Cube" onclick="getCube(),getName()"/></input>
+        </form>
+
+        <h2>3.Example of getELementByClassName</h2>
+        <p class="intro">Hi Raj</p>
+        <p class="intro">Hello Neelam</p>
+        <h4 class="intro">Hi Raj</h4>
+        <p id="demo3"></p>
+
+
+    <script>
+        document.getElementById("demo").innerHTML="<h3>Hello Rajkumar Prajapati</h3>";
+
+        //Solution of Example 2
+        function getCube(){
+            var n = document.getElementById("number").value;
+            alert(n*n*n);
+        }
+        function getName(){
+            var name=document.getElementById("name").value;
+            document.getElementById("demo2").innerHTML="Welcome "+name;
+        }
+
+        //Solution of Exapmle 3
+
+        var x = document.getElementsByClassName("intro");
+        document.write("It return an array of same class name element so need to print like");
+        document.write("<br>"+x[0].innerHTML); 
+        document.write("<br>"+x[1].innerHTML); 
+        document.write("<br>"+x[2].innerHTML); 
+    </script>    
+    </body>
+</html>

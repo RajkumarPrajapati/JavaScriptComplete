@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Call Back Example set time out</h2>
+        <p>Wait 5 seconds and print something on h1 tag</p>
+        <h1 id="demo"></h1>
+        <br>
+        <h2>Call Back Example of setInterval printing time after 1 sec interval</h2>
+        <h1 id="demo1"></h1>
+
+        <script>
+            function myFunction(){
+                document.getElementById("demo").innerHTML="I Love You !!";
+            }
+
+            setTimeout(myFunction,5000);
+// Example of setInterval
+
+            function getDate(){
+                let d= new Date();
+                let h=d.getHours();
+                let m=d.getMinutes();
+                let s=d.getSeconds();
+                document.getElementById("demo1").innerHTML=`${h}:${m}:${s}`
+            }
+
+            setInterval(getDate,1000);
+
+            function show(){
+                console.log('i am Show function');
+            }
+            function msg(callback){
+                callback();
+            }
+            msg(show);
+
+
+
+
+        </script>
+    </body>
+</html>

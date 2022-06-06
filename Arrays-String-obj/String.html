@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name="Rajkumar"
+        document.write(name+"<br />");
+        document.write('DataType of name is : '+typeof(name)+"<br />");
+        var name = new String('Rajkumar');
+        document.write(name+'<br>');
+        document.write("If we are creating String by new keyword then it will be Object type === "+typeof(wname));
+
+        if(name == name ){
+            document.write('Both are Same');
+            console.log('True');
+        }
+        else if(name === name){
+            document.write('Both are not Same diff data type');
+            console.log('false');
+        }
+    </script>
+</body>
+</html>

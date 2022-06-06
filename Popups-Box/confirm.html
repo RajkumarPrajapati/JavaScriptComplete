@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h2>Example of confirm popup box</h2>
+        <input type="submit" onclick="myFunction()" value="Enter to save" />
+     
+    </body>
+    <script>
+        function myFunction(){
+        var choice = confirm("Are you want submit your data");
+        
+        if(choice == true){
+          window.open("http://127.0.0.1:5500/BOM/index.html");
+            return true;
+        }else{
+            document.write("You do not to visit the wbsite");
+            return false;
+        }
+
+        }
+    </script>
+</body>
+</html>

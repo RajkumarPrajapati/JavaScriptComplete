@@ -1,0 +1,82 @@
+<head>
+    <style>
+        .div1{
+            background-color: lightblue;
+            width: 30%;
+            padding: 30px;
+            border-radius: 50px;
+        }
+    </style>
+
+</head>
+
+<body onload="onLoad()">
+    <h1 id="abc"></h1>
+<h2>1.onchange</h2>
+<h2>2.onfocus</h2>
+<h2>3.onblur</h2>
+<h2>4.onsubmit</h2>
+<div class="div1">
+    <h2>1.onchange Event</h2>
+    <p>When you leave this text field  then a function called which trasform input text to Upper case</p>
+    
+    <p>Select a Mobile </p>
+    <select id="mySelect" onchange="myFun()">
+        <option>Apple</option>
+        <option>Samsung</option>
+        <option>Oppo</option>
+        <option>Vivo</option>
+    </select><br><br>
+    <h4 id="demo1"></h4>
+    <br>
+
+    <h2>2.onfocus Event</h2>
+    Enter your name: <input type="text" onfocus="myFunction(this)">
+
+    <p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+    <h4 id="demo2"></h4>
+    </div><br><br>
+    <div class="div1">
+        <h2>3.onblur Event</h2>
+        Enter your Address : <input type="text" id="add" onblur="uppcase()">
+        <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+    </div><br><br>
+    <div class="div1">
+        <h3>4.onsunmit Event</h3>
+        <form action="#"  onsubmit="validate()">
+        Enter Email : <input type="text" id="email"><br><br>
+        <button id="button">Enter</button>
+        <p id="e"></p>
+    </form>
+    </div>
+<script>
+    function myFun(){
+        var x = document.getElementById("mySelect").value;
+        document.getElementById("demo1").innerHTML="You are selecting : " + x;
+        
+    }
+
+    function myFunction(x) {
+     x.style.background = "yellow";
+     document.getElementById("demo1").innerHTML=m; 
+
+}
+
+function uppcase(){
+    var x = document.getElementById("add");
+    x.value = x.value.toUpperCase();
+}
+
+function validate(){
+    var em=document.getElementById("email").value;
+    alert("Your Email is : "+em);
+    document.getElementById("e").innerHTML=em;
+}
+
+function onLoad(){
+    document.getElementById("abc").innerHTML="Oload Event Working";
+}
+</script>
+</body>
+</html>

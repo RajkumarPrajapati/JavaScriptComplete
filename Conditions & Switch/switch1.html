@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Enter what you want to do</h2>
+        <ul>
+            <li>add</li>
+            <li>sub</li>
+            <li>mul</li>
+            <li>div</li>
+        </ul>
+    <form>
+        <input type="text" name="choice" id="choice" /><br/><br>
+        <input type="submit" value="Perform" onClick="myFunction()"/>
+    </form>
+
+    <script>
+       function myFunction(){
+            let ch = document.getElementById("choice").value;
+            console.log(ch);
+          
+
+            switch(ch){
+
+                case "add" :
+                    var a=10;
+                    var b=20;
+                    var c=a+b;
+                    document.write("Addition of two numbers is : "+c);
+                    break;
+                case "sub" :
+                    var a = 10;
+                    var b = 20;
+                    var c = a - b;
+                    document.write("Sub of two numbers is : " + c);
+                    break;
+                case "mul":
+                    var a = 10;
+                    var b = 20;
+                    var c = a * b;
+                    document.write("Mutiplecation of two numbers is : " + c);
+                    break;
+                case "div":
+                    var a = 10;
+                    var b = 20;
+                    var c = a / b;
+                    document.write("Sub of two numbers is : " + c);
+                    break; 
+                default:
+                    alert("Kindly enter valid option");       
+            }
+        }
+    </script>
+
+</body>
+</html>

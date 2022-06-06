@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Single Event</title>
+        <style>
+            .div1{
+                background-color: khaki;
+                width:40%;
+                color:red;
+                border-radius: 30px;
+                padding: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            <h2>Adding Single Event to an Element by addEventListener() method</h2>
+            <p>Click on the button and see the effect </p>
+            <button id="myBtn">Click Here to call Event</button>
+            <p id="demo"></p>
+        </div>
+    </body>
+    <script>
+        document.getElementById("myBtn").addEventListener("click",myFunction);
+        function myFunction(){
+            document.getElementById("demo").innerHTML="Called click event by addEventListener() method";
+        }
+    </script>
+</html>

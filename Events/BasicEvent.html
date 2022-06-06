@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Four Way to Write Events</title>
+        <style>
+            .div1{
+                background-color: lightblue;
+                width: 30%;
+                padding: 30px;
+                border-radius: 50px;
+            }
+            .div2{
+                background-color: lightblue;
+                width: 30%;
+                padding: 30px;
+                border-radius: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>1.Inline Event</h3>
+        <h3>2.By Calling a function</h3>
+        <h3>3.Using inline(HTML onclick="" property and element.onclick)</h3>
+        <h3>4.Using Event Listener</h3>
+
+    <div class="div1">
+        <h3>1. Example of inline event</h3>
+        <button onclick="alert('Hello Rajkumar')">Click To Get Alert</button><br>
+    </div><br><br>
+    <div class="div2">
+        <h3>2.Event By calling a function</h3>
+        <h4 id="demo"></h4>
+        <h4 id="demo1"></h4>
+        <h4 onclick="add()">Click on me to get Add Method</h4>
+        <button onclick="add()">Click to call add function</button><br><br>
+        <button onclick="getDate()">Click to get Current Date and Time</button>
+        <h3 onclick="changeText(this)">Click to change Text</h3>
+    </div><br><br>
+    <div class="div1">
+        <h3>3.By Using Onclick Property</h3>
+        <p>Click on Show Message button to showMessage() function</p>
+        <button id="myBtn">Show Message</button>
+        <p id="demo2"></p>
+
+    </div>
+
+
+
+        <script>
+            function add(){
+                var a=10;
+                var b=20;
+                var sum=a+b;
+                document.getElementById("demo").innerHTML="Sum is : "+sum;
+            }
+
+            function getDate(){
+                var date = Date();
+                document.getElementById("demo1").innerHTML=date;
+            }
+
+            function changeText(id){
+                id.innerHTML="Text Has been changed"
+            }
+
+            document.getElementById("myBtn").onclick=showMessage;
+            function showMessage(){
+            document.getElementById("demo2").innerHTML="Hi Neelam How are now ?";
+            }
+        </script>
+    </body>
+</html>

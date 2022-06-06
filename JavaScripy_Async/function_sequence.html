@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h3>In this Example we are going to the function are execute in the sequence they arw called </h3>
+        <h2 id="demo"></h2>
+    </body>
+    <script>
+         function display(abc){
+            document.getElementById("demo").innerHTML=abc;
+         }
+         function fun1(){
+            display("First Function invoked");
+         }
+         function fun2(){
+            display("Second Function invoked")
+         }
+
+        //  fun1();calling second function
+        //  fun2();
+
+         fun2();//Calling first function
+         fun1();
+    </script>
+</html>

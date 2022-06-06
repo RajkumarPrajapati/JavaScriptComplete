@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inner Html to Make HTML Dynamic</title>
+</head>
+
+<body>
+    <script>
+        function myform(){
+        var data="Name : <input type='text' name='name'> <br> Comment :<br><textarea rows='5' cols='70'></textarea>"+
+        "<br><input type='submit' value='Post Comment'>";
+        document.getElementById("myData").innerHTML=data;
+        document.write("Data is :" +data)
+    }
+    </script>
+    <form>
+        <input type="button" value="Comment" onclick="myform()"><br>
+        <div id="myData"></div>
+    </form>
+</body>
+</html>

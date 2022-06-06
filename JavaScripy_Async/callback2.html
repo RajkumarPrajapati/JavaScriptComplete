@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Call Back function</h2>
+        <h3>Display Stydent name</h3>
+        <ul id="demo"></ul>
+
+        <script>
+            
+            function perOne(friend,callback){
+                 console.log(`I am busy right now i am talking with ${friend}.I will call you back`);
+                 callback();
+            }
+
+            function perTwo(){
+                console.log(`Hey i call you back see`);
+            }
+            
+            perOne("Neelam",perTwo);
+         
+        </script>
+    </body>
+</html>
